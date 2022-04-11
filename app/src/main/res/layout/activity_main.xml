@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_diem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điểm: "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#F44336"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <SeekBar
+        android:id="@+id/seek_bar_1"
+        android:layout_width="647dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="244dp"
+        android:max="100" />
+
+    <SeekBar
+        android:id="@+id/seek_bar_2"
+        android:layout_width="647dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="200dp"
+        android:max="100" />
+
+    <SeekBar
+        android:id="@+id/seek_bar_3"
+        android:layout_width="647dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="145dp"
+        android:max="100" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="612dp"
+        android:layout_marginBottom="28dp"
+        android:text="Start" />
+
+    <CheckBox
+        android:id="@+id/chk_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="229dp"
+        android:layout_toStartOf="@id/seek_bar_1" />
+
+    <CheckBox
+        android:id="@+id/chk_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="181dp"
+        android:layout_toStartOf="@id/seek_bar_3" />
+
+    <CheckBox
+        android:id="@+id/chk_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="130dp"
+        android:layout_toStartOf="@id/seek_bar_2" />
+
+
+</RelativeLayout>
